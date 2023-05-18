@@ -10,9 +10,8 @@ export const Login = () => {
   return (
     <Styled.Container>
       <Styled.Info>
-        <LinkTo href='https://www.api-football.com/' >Não tem uma ApiKey? Crie aqui!</LinkTo>
+        <LinkTo href='https://www.api-football.com/documentation-v3' >Não tem uma ApiKey? Crie aqui!</LinkTo>
         <Heading as='h1' uppercase={true} big={true}>Meu Time</Heading>
-
       </Styled.Info>
       <FormLogin></FormLogin>
       <Footer />

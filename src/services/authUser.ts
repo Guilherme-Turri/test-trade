@@ -1,0 +1,19 @@
+import { AUTH_USER_API } from "./api";
+import { IRequest } from "../types/types";
+
+interface AuthCountries{
+  response?:{
+    name:string,
+    code:string,
+    flag:string
+  },
+  errors?:{
+    token:string
+  }
+}
+
+export const authUser = async (apiKey:string , request:IRequest<AuthCountries>)=> {
+  const { url, options } = AUTH_USER_API(apiKey)
+  const {response, json} = await request(url, options)
+  return {response, json}
+}

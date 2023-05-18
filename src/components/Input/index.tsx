@@ -11,7 +11,6 @@ export interface InputProps {
 
 export const Input = ({ type, name, value, onChange, error }: InputProps) => {
   const [visible, setVisible] = React.useState(false)
-  console.log(error)
   const checkBlur = () => {
     if (error) {
       setVisible(true)
