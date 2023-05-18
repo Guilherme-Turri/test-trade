@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextComponent /> Should render on screen properly 1`] = `
+.c0 {
+  color: #273036;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Test
+  </p>
+</div>
+`;
