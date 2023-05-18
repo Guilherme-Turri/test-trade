@@ -1,11 +1,15 @@
 import * as Styled from './styles'
 import { Footer } from '../../components/Footer';
-import { TextComponent } from '../../components/TextComponent';
+
+import { FormLogin } from '../../templates/FormLogin';
+import { Heading } from '../../components/Heading';
 
 export const Login = () => {
+
   return (
     <Styled.Container>
-      <TextComponent> Test</TextComponent>
+      <Heading as='h1' uppercase={true} big={true}>Meu Time</Heading>
+      <FormLogin></FormLogin>
       <Footer />
     </Styled.Container>
   )

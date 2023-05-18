@@ -22,5 +22,8 @@ export const theme ={
     small: '0.625rem',
     normal:'0.938rem',
     big:'1.25rem'
+   },
+   fonts:{
+    logoFont:"'Bruno Ace SC', cursive;"
    }
 }
