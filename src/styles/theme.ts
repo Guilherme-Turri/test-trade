@@ -3,6 +3,7 @@ export const theme ={
     backgroundColor:'#F3F4F5',
     primaryColor:'#273036' ,
     secondaryColor:'#00c555',
+    optionalColor:'#0099FF',
     error: '#ff5555'
   },
   sizes: {

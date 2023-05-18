@@ -19,10 +19,6 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${theme.color.backgroundColor};
     color: ${theme.color.primaryColor}
   }
-  a{
-    text-decoration: none;
-    color:${theme.color.secondaryColor};
-    }
     ul, li {
   margin: 0;
   padding: 0;
