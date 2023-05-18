@@ -6,6 +6,7 @@ import { useInput } from "../../hooks/useInput";
 import { authUser } from "../../services/authUser";
 import * as Styled from './styles'
 import { ErrorMessage } from '../../components/ErrorMessage';
+import { Ball } from '../../UI/Ball';
 
 export const FormLogin = () => {
   const [message, setMessage] = React.useState<string>('')
@@ -40,7 +41,7 @@ export const FormLogin = () => {
         Enter
       </SubmitButton>
       {message && <ErrorMessage>{message}</ErrorMessage>}
-      {loading && <p>...carregando</p>}
+      {loading && <Styled.Loading><Ball /></Styled.Loading>}
     </Styled.Container>
   )
 }
