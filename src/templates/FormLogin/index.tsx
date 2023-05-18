@@ -7,12 +7,16 @@ import { authUser } from "../../services/authUser";
 import * as Styled from './styles'
 import { ErrorMessage } from '../../components/ErrorMessage';
 import { Ball } from '../../UI/Ball';
+import { useDispatch } from 'react-redux';
+import { setUser } from "../../storage/user/user";
+import { setCountries } from "../../storage/countries/countries";
 
 export const FormLogin = () => {
   const [message, setMessage] = React.useState<string>('')
   const { error, loading, request } = useFetchData();
   const userName = useInput();
   const apiKey = useInput();
+  const dispatch = useDispatch();
 
   const handleAuth = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -23,15 +27,22 @@ export const FormLogin = () => {
       if (response.status === 200 && json?.errors?.token) {
         setMessage(json.errors.token)
       }
-      if (response.status === 200 && json?.response) {
-        console.log('logou')
+
+      if (response.status === 200 && json?.response && !json?.errors?.token) {
+        const user = {
+          name: userName.value,
+          apiKey: apiKey.value,
+        }
+        dispatch(setUser(user))
+        dispatch(setCountries(json.response))
       }
+
       if (error) {
         setMessage(error)
       }
-
     }
   }
+
 
   return (
     <Styled.Container data-testid='form' onSubmit={handleAuth}>

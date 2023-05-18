@@ -1,12 +1,8 @@
 import { AUTH_USER_API } from "./api";
-import { IRequest } from "../types/types";
+import { IRequest, ICountry } from "../types/types";
 
 interface AuthCountries{
-  response?:{
-    name:string,
-    code:string,
-    flag:string
-  },
+  response?:ICountry[]
   errors?:{
     token:string
   }
