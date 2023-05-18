@@ -17,5 +17,6 @@ ${({ theme }) => css`
   background-size: cover;
   width:100%;
   height: 320px;
+  z-index: -10000;
 `}
 `

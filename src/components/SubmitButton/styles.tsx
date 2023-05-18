@@ -12,5 +12,6 @@ ${({ theme, enableColor }) => css`
   height: 2rem;
   text-align: center;
   color:${theme.color.backgroundColor};
+  cursor: pointer;
   `}
 `
