@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> should render on screen as h3 1`] = `
+.c0 {
+  text-transform: none;
+  color: #00c555;
+  font-size: 60px;
+  font-family: 'Bruno Ace SC',cursive;
+}
+
+<div>
+  <h3
+    class="c0"
+  >
+    Test
+  </h3>
+</div>
+`;
