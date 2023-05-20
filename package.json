@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "istanbul cover --dir coverage ./node_modules/.bin/react-scripts test --env=jsdom"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +54,8 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/redux": "^3.6.0",
     "@types/redux-persist": "^4.3.1",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "istanbul": "^0.4.5"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -63,6 +65,16 @@
       "!<rootDir>/src/styles/*.{js,jsx,ts,tsx}",
       "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+          "statements": 100,
+          "branches": 100,
+          "functions": 100,
+          "lines": 100
+      }
   }
+
+  }
+  
 }
