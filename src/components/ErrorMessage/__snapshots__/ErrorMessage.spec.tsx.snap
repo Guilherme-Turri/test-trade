@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorMessage /> should render on screen properly 1`] = `
+.c0 {
+  color: #ff5555;
+  font-size: 12px;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    ErrorMsg
+  </p>
+</div>
+`;
