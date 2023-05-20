@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkTo/> should render on screen properly 1`] = `
+.c0 {
+  color: #00c555;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <a
+    class="c0"
+    href="www.google.com"
+    target="_blank"
+  >
+    Link
+  </a>
+</div>
+`;
