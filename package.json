@@ -29,12 +29,24 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "coverage": "istanbul cover --dir coverage ./node_modules/.bin/react-scripts test --env=jsdom"
+    "coverage": "istanbul cover --dir coverage ./node_modules/.bin/react-scripts test --env=jsdom",
+    "storybook": "storybook dev -p 6006 -s public",
+    "build-storybook": "storybook build -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -50,12 +62,25 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^7.0.12",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-interactions": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/node-logger": "^7.0.12",
+    "@storybook/preset-create-react-app": "^7.0.12",
+    "@storybook/react": "^7.0.12",
+    "@storybook/react-webpack5": "^7.0.12",
+    "@storybook/testing-library": "^0.1.0",
     "@types/react-redux": "^7.1.25",
     "@types/react-router-dom": "^5.3.3",
     "@types/redux": "^3.6.0",
     "@types/redux-persist": "^4.3.1",
     "@types/styled-components": "^5.1.26",
-    "istanbul": "^0.4.5"
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "istanbul": "^0.4.5",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.12",
+    "webpack": "^5.83.1"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -68,13 +93,11 @@
     ],
     "coverageThreshold": {
       "global": {
-          "statements": 100,
-          "branches": 100,
-          "functions": 100,
-          "lines": 100
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
       }
+    }
   }
-
-  }
-  
 }
