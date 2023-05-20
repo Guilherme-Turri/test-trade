@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubmitButton/> should render on screen properly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  all: unset;
+  background: #CACCb1;
+  width: 100%;
+  border-radius: 5px;
+  height: 2rem;
+  text-align: center;
+  color: #F3F4F5;
+  cursor: pointer;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    btn
+  </button>
+</div>
+`;
