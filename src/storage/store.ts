@@ -5,18 +5,23 @@ import userReducer from './user/user';
   import countriesReducer from './countries/countries'
 
 
-const persistConfig = {
-  key: 'root',
-  storage,
-  whitelist: ['user', 'countries'],
-};
-
-const persistedReducer = persistReducer(persistConfig, userReducer);
- const persistedCountriesReducer = persistReducer(persistConfig, countriesReducer); 
-
+  const userPersistConfig = {
+    key: 'user',
+    storage,
+    whitelist: ['user'],
+  };
+  
+  const countriesPersistConfig = {
+    key: 'countries',
+    storage,
+    whitelist: ['countries'],
+  };
+  
+  const persistedUserReducer = persistReducer(userPersistConfig, userReducer);
+  const persistedCountriesReducer = persistReducer(countriesPersistConfig, countriesReducer);
 const store = configureStore({
   reducer: {
-    user: persistedReducer,
+    user: persistedUserReducer,
    countries: persistedCountriesReducer 
   },
   middleware: (getDefaultMiddleware) =>
