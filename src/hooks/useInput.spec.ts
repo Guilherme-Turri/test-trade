@@ -32,6 +32,6 @@ describe('useForm custom hook', () =>{
       result.current.onChange(event);
     });
     expect(result.current.value).toBe('N')
-    expect(result.current.error).toBe('Please, at least two characters.')
+    expect(result.current.error).toBe('Por favor, digite duas letras ou mais.')
   })
 })

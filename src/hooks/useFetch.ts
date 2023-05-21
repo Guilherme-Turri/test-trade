@@ -15,7 +15,7 @@ export const useFetchData = () => {
       if (!response.ok) throw new Error()
     } catch (e: any) {
       json = null;
-      setError('Fail to fetch.')
+      setError('Falha ao conectar com o servidor.')
     }
     finally {
       setLoading(false)
