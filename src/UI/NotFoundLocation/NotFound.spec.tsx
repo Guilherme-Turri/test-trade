@@ -1,11 +1,11 @@
 import { screen } from '@testing-library/react'
-import { NotFound } from '.'
+import { NotFoundLocation } from '.'
 import { componentRender } from '../../render/componentRender'
 
 describe('</NotFound>', () => {
   it('should render on screen', () => {
-    const { container } = componentRender(<NotFound />)
-    expect(screen.getByTestId('NotFound')).toBeInTheDocument();
+    const { container } = componentRender(<NotFoundLocation />)
+    expect(screen.getByTestId('NotFoundLocation')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   })
 })
