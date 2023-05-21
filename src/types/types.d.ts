@@ -3,7 +3,7 @@ name:string;
 apiKey:string;
 }
 export interface ICountry {
-  namge: string;
+  name: string;
   code: string;
   flag: string;
 }

@@ -24,20 +24,23 @@ export const FormLogin = () => {
     e.preventDefault()
     if (userName.value && apiKey.value && !userName.error) {
       setMessage('')
-      const { response, json } = await authUser(apiKey.value, request);
-
-      if (response.status === 200 && json?.errors?.token) {
-        setMessage(json.errors.token)
-      }
-
-      if (response.status === 200 && json?.response && !json?.errors?.token) {
-        const user = {
-          name: userName.value,
-          apiKey: apiKey.value,
+      const result = await authUser(apiKey.value, request);
+      if (result !== undefined) {
+        const { response, json } = result;
+        if (response.status === 200 && json?.errors?.token) {
+          setMessage(json.errors.token)
         }
-        dispatch(setUser(user))
-        dispatch(setCountries(json.response))
-        navigate('/dashboard')
+
+        if (response.status === 200 && json?.response && !json?.errors?.token) {
+          const user = {
+            name: userName.value,
+            apiKey: apiKey.value,
+          }
+          dispatch(setUser(user))
+          dispatch(setCountries(json.response))
+          navigate('/dashboard')
+        }
+
       }
 
       if (error) {
