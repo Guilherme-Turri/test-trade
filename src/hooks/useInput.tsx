@@ -3,7 +3,7 @@ import React from 'react'
 const typeField = {
   email: {
     regex: /^.{2,}$/,
-    message: "Please, at least two characters."
+    message: "Por favor, digite duas letras ou mais."
   }
 }
 

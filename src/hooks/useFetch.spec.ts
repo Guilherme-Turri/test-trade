@@ -49,6 +49,6 @@ describe('useFetchData custom hook', () =>{
     await result.current.request(url, options);
     });
     expect(mockFetch).toHaveBeenCalledWith(url, options);
-    expect(result.current.error).toBe('Fail to fetch.');  
+    expect(result.current.error).toBe('Falha ao conectar com o servidor.');  
   })
 })
