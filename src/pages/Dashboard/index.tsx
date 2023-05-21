@@ -1,5 +1,7 @@
+import { Header } from "../../templates/Header"
+
 export const Dashboard = () => {
   return (
-    <p>logado</p>
+    <Header />
   )
 }
