@@ -1,11 +1,11 @@
 /* eslint-disable testing-library/no-unnecessary-act */
-import { pageRender } from '../render/pageRender'
-import { FormLogin } from './FormLogin'
+import { pageRender } from '../../render/pageRender'
+import { FormLogin } from '.'
 import { act, fireEvent, screen, waitFor, } from '@testing-library/react'
 import userEvent from '@testing-library/user-event';
 
-import * as fetchDataTest from '../hooks/useFetch'
-import * as authLoginTest from '../services/authUser';
+import * as fetchDataTest from '../../hooks/useFetch'
+import * as authLoginTest from '../../services/authUser';
 
 jest.setTimeout(10000)
 
