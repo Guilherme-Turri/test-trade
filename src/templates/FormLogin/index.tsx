@@ -10,6 +10,7 @@ import { Ball } from '../../UI/Ball';
 import { useDispatch } from 'react-redux';
 import { setUser } from "../../storage/user/user";
 import { setCountries } from "../../storage/countries/countries";
+import { useNavigate } from 'react-router-dom';
 
 export const FormLogin = () => {
   const [message, setMessage] = React.useState<string>('')
@@ -17,6 +18,7 @@ export const FormLogin = () => {
   const userName = useInput();
   const apiKey = useInput();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleAuth = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -35,6 +37,7 @@ export const FormLogin = () => {
         }
         dispatch(setUser(user))
         dispatch(setCountries(json.response))
+        navigate('/dashboard')
       }
 
       if (error) {
