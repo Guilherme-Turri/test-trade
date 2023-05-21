@@ -11,5 +11,8 @@ interface AuthCountries{
 export const authUser = async (apiKey:string , request:IRequest<AuthCountries>)=> {
   const { url, options } = AUTH_USER_API(apiKey)
   const {response, json} = await request(url, options)
-  return {response, json}
-}
+  if(response && json){
+    return {response, json}
+   }
+    else return 
+ }
