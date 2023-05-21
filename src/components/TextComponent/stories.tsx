@@ -9,7 +9,7 @@ export default {
   }
 }
 
-export const Temaplete = (args: any) => {
+export const Template = (args: any) => {
   return (
     <div>
       <TextComponent {...args} />
