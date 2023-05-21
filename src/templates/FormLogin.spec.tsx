@@ -81,7 +81,7 @@ describe('<FormLogin/>', () => {
       }
     });
 
-    const { container } = pageRender(<FormLogin />)
+    pageRender(<FormLogin />)
     const name = screen.getByPlaceholderText('Nome')
     const apyKey = screen.getByPlaceholderText('ApiKey')
     const button = screen.getByText('Enter')
