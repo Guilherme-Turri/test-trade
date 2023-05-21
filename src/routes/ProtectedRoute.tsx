@@ -7,5 +7,5 @@ import { Login } from '../pages/Login';
 
 export const ProtectedRoute = () => {
   const { user } = useSelector((state: RootState) => state.user);
-  return user?.apiKey ? <Dashboard /> : <Login />;
+  return user ? <Dashboard /> : <Login />;
 }
