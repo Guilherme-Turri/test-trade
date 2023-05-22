@@ -3,14 +3,27 @@ import { pageRender } from '../../render/pageRender'
 import { FormLogin } from '.'
 import { act, fireEvent, screen, waitFor, } from '@testing-library/react'
 import userEvent from '@testing-library/user-event';
-
 import * as fetchDataTest from '../../hooks/useFetch'
 import * as authLoginTest from '../../services/authUser';
+
+const mockedUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => mockedUsedNavigate,
+}));
+
+const mockedUseDispatch = jest.fn();
+jest.mock('react-redux', () => ({
+  ...jest.requireActual('react-redux'),
+  useDispatch: () => mockedUseDispatch,
+}));
 
 jest.setTimeout(10000)
 
 describe('<FormLogin/>', () => {
+
   const authLoginSpy = jest.spyOn(authLoginTest, 'authUser')
+
   it('should render on screen properly', () => {
     pageRender(<FormLogin />)
     const enter = screen.getByText('Enter')
@@ -61,6 +74,8 @@ describe('<FormLogin/>', () => {
   })
 
   it('should try to login with correct ApiKeyand navigate to dashboard.', async () => {
+
+
     const countries = [
       {
         name: 'country1',
@@ -92,7 +107,10 @@ describe('<FormLogin/>', () => {
       fireEvent.click(button);
     });
     await waitFor(() => {
-      expect(window.location.href).toEqual(expect.stringContaining('/dashboard'))
+      expect(mockedUseDispatch).toHaveBeenCalled();
+    })
+    await waitFor(() => {
+      expect(mockedUsedNavigate).toHaveBeenCalledWith('/dashboard');
     })
   })
 })
