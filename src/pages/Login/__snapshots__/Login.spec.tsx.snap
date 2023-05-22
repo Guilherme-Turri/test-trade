@@ -93,7 +93,7 @@ exports[`<Login /> should render on screen 1`] = `
   height: 25px;
   padding: 15px;
   box-sizing: border-box;
-  color: #273036;
+  color: #2d5839;
 }
 
 .c6::-webkit-input-placeholder {
