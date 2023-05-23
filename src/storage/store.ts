@@ -2,7 +2,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import userReducer from './user/user';
-  import countriesReducer from './countries/countries'
+import countriesReducer from './countries/countries'
+import modalReducer from './modal/modal';
 
 
   const userPersistConfig = {
@@ -19,8 +20,10 @@ import userReducer from './user/user';
   
   const persistedUserReducer = persistReducer(userPersistConfig, userReducer);
   const persistedCountriesReducer = persistReducer(countriesPersistConfig, countriesReducer);
+
 const store = configureStore({
   reducer: {
+    modal:modalReducer,
     user: persistedUserReducer,
    countries: persistedCountriesReducer 
   },
