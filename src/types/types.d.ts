@@ -7,6 +7,10 @@ export interface ICountry {
   code: string;
   flag: string;
 }
+export interface IModal {
+  showModal: boolean;
+  type: string;
+}
 export type IRequest<T> = (url: string, options: RequestInit) => Promise<{
   response:any,
   json: T | null;

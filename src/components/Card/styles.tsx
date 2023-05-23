@@ -24,8 +24,5 @@ export const Img = styled.div`
 ${({ theme }) => css`
 height: 100px;
 width: 100px;
-
-/* border:1px solid ${theme.color.secondaryColor};
-border-radius: 5px; */
 `}
 `
