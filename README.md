@@ -30,6 +30,8 @@ The first step is to create an account on api-football. This key is required for
 :large_blue_circle: StoryBook
 :large_blue_circle: Styed-Components
 :large_blue_circle: Styled-Icons
+:large_blue_circle: Victory-Chart
+
 
 ## Running
 
@@ -50,7 +52,9 @@ $ npm start
 
 ## On Prod:
 #### This project was deployed at **Vercel**.  
-:heavy_check_mark:Click here to see! (https://test-trade-one.vercel.app/)
+:heavy_check_mark:Click here to see! (https://test-trade-one.vercel.app/).
+
+You can check the documentation for the UI components and items through the Storybook build by accessing here: https://test-trade-storybook.vercel.app/
 
 
 
