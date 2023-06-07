@@ -9,7 +9,6 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<ProtectedRoute />} />
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </BrowserRouter>
 
