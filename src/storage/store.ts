@@ -2,8 +2,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import userReducer from './user/user';
-import countriesReducer from './countries/countries'
 import modalReducer from './modal/modal';
+import parametersReducer from './parameters/parameters';
 
 
   const userPersistConfig = {
@@ -12,21 +12,25 @@ import modalReducer from './modal/modal';
     whitelist: ['user'],
   };
   
-  const countriesPersistConfig = {
-    key: 'countries',
+  const parametersPersistConfig = {
+    key: 'parameters',
     storage,
-    whitelist: ['countries'],
+    whitelist: ['parameters'],
   };
+
   
   const persistedUserReducer = persistReducer(userPersistConfig, userReducer);
-  const persistedCountriesReducer = persistReducer(countriesPersistConfig, countriesReducer);
+
+  const persistedParametersReducer = persistReducer(parametersPersistConfig, parametersReducer);
+
 
 const store = configureStore({
   reducer: {
+    parameters:persistedParametersReducer,
     modal:modalReducer,
     user: persistedUserReducer,
-   countries: persistedCountriesReducer 
   },
+
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: false, 

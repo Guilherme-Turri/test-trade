@@ -5,7 +5,7 @@ export const theme ={
     secondaryColor:'#00c555',
     optionalColor:'#0099FF',
     error: '#ff5555'
-  },
+  }, 
   sizes: {
     small: '0.85rem',
     normal: '1rem',

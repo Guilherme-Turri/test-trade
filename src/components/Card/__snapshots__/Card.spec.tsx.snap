@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`</Card> should render properly and not avaliable to click 1`] = `
+.c3 {
+  color: #2d5839;
+}
+
+.c0 {
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 15.625rem;
+  width: 15.625rem;
+  border-radius: 5px;
+  margin: 0.938rem;
+  box-shadow: none;
+}
+
+.c0 .c2 {
+  color: grey;
+  font-family: 'Bruno Ace SC',cursive;
+  border-bottom: none;
+  padding: 0.313rem;
+}
+
+.c1 {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="cardId"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        alt="Test"
+        src="test.jpg"
+      />
+    </div>
+    <p
+      class="c2 c3"
+    >
+      cardTitle
+    </p>
+  </div>
+</div>
+`;

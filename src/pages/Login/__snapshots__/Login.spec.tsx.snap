@@ -8,6 +8,13 @@ exports[`<Login /> should render on screen 1`] = `
   text-decoration: none;
 }
 
+.c5 {
+  text-transform: uppercase;
+  color: #00c555;
+  font-size: 60px;
+  font-family: 'Bruno Ace SC',cursive;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,6 +33,7 @@ exports[`<Login /> should render on screen 1`] = `
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  padding: 0.938rem;
 }
 
 .c1 {
@@ -51,13 +59,13 @@ exports[`<Login /> should render on screen 1`] = `
   -webkit-align-self: end;
   -ms-flex-item-align: end;
   align-self: end;
-  padding-right: 1rem;
+  padding-right: 0.938rem;
 }
 
-.c8 {
+.c9 {
   color: #F3F4F5;
   font-weight: bold;
-  padding: 5px;
+  padding: 0.625rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,39 +88,39 @@ exports[`<Login /> should render on screen 1`] = `
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 320px;
+  height: 20rem;
   z-index: -10000;
 }
 
-.c6 {
+.c7 {
   outline: none;
   all: unset;
   border: 1px solid #00c555;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   width: 100%;
-  height: 25px;
-  padding: 15px;
+  height: 1.563rem;
+  padding: 0.938rem;
   box-sizing: border-box;
   color: #2d5839;
 }
 
-.c6::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: '#95A5A0'!important;
 }
 
-.c6::-moz-placeholder {
+.c7::-moz-placeholder {
   color: '#95A5A0'!important;
 }
 
-.c6:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: '#95A5A0'!important;
 }
 
-.c6::placeholder {
+.c7::placeholder {
   color: '#95A5A0'!important;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -127,11 +135,11 @@ exports[`<Login /> should render on screen 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   background-color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  padding: 15px;
+  border-radius: 0.313rem;
+  padding: 0.938rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -143,20 +151,37 @@ exports[`<Login /> should render on screen 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 500px;
-  height: 250px;
+  min-width: 31.25rem;
+  height: 15.625rem;
   -webkit-box-pack: space-evenly;
   -webkit-justify-content: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin-bottom: 15px;
+  margin: 0.938rem;
 }
 
-.c4 {
-  text-transform: uppercase;
-  color: #00c555;
-  font-size: 60px;
-  font-family: 'Bruno Ace SC',cursive;
+@media (max-width:650px) {
+  .c0 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c0 .c4 {
+    font-size: 3rem;
+    padding: 30px 0 30px 0;
+  }
+}
+
+@media (max-width:650px) {
+  .c6 {
+    min-width: 80%;
+  }
 }
 
 <div>
@@ -168,24 +193,24 @@ exports[`<Login /> should render on screen 1`] = `
     >
       <a
         class="c2 c3"
-        href="https://www.api-football.com/documentation-v3"
+        href="https://dashboard.api-football.com/"
         target="_blank"
       >
         Não tem uma ApiKey? Crie aqui!
       </a>
       <h1
-        class="c4"
+        class="c4 c5"
       >
         Meu Time
       </h1>
     </section>
     <form
-      class="c5"
+      class="c6"
       data-testid="form"
     >
       <input
         autocomplete="new-password"
-        class="c6"
+        class="c7"
         data-testid="Input"
         placeholder="Nome"
         type="text"
@@ -193,20 +218,20 @@ exports[`<Login /> should render on screen 1`] = `
       />
       <input
         autocomplete="new-password"
-        class="c6"
+        class="c7"
         data-testid="Input"
         placeholder="ApiKey"
         type="password"
         value=""
       />
       <button
-        class="c7"
+        class="c8"
       >
         Enter
       </button>
     </form>
     <footer
-      class="c8"
+      class="c9"
     >
       Guilherme Turri - Trade Technology
     </footer>

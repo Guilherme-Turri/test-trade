@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModalSeason/> Should render on screen properly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.938rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 2px solid #00c555;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6.25rem;
+  height: 3.438rem;
+  margin: 0.938rem;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    data-testid="modalSeasonId"
+  >
+    <div
+      class="c1"
+    >
+      2020
+    </div>
+    <div
+      class="c1"
+    >
+      2021
+    </div>
+    <div
+      class="c1"
+    >
+      2022
+    </div>
+    <div
+      class="c1"
+    >
+      2023
+    </div>
+  </div>
+</div>
+`;

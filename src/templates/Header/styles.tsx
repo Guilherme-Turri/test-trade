@@ -4,7 +4,7 @@ export const Container = styled.header`
 ${({ theme }) => css`
 display: flex;
 justify-content: space-between;
-padding: 15px;
+padding: ${theme.spacings.normal};
 align-items: center;
 width: 100%;
 height: 3rem;
@@ -16,8 +16,8 @@ animation: ${slideInAnimation} .3s ;
 `}
 `
 export const Img = styled.header`
-width: 35px;
-height: 35px;
+width: 2.188rem;
+height: 2.188rem;
 cursor: pointer;
 `
 const slideInAnimation = keyframes`

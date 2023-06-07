@@ -1,0 +1,475 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Graph> should render on screen properly 1`] = `
+.c2 {
+  text-transform: none;
+  color: #00c555;
+  font-size: 20px;
+  font-family: 'Bruno Ace SC',cursive;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -999999999;
+}
+
+.c0 .c1 {
+  margin-bottom: 0.938rem;
+}
+
+<div>
+  <section
+    class="c0"
+    data-testid="graph"
+  >
+    <h3
+      class="c1 c2"
+    >
+      Gols em Minutos
+    </h3>
+    <div
+      class="VictoryContainer"
+      style="height: 100%; width: 100%; user-select: none; pointer-events: none; position: relative;"
+    >
+      <svg
+        height="300"
+        role="img"
+        style="pointer-events: all; width: 100%; height: 100%;"
+        viewBox="0 0 450 300"
+        width="450"
+      >
+        <g
+          role="presentation"
+        >
+          <path
+            d="M 41.25, 250 
+A 0 0 0 0 0, 41.25, 250 
+L 41.25, 250 
+A 0 0 0 0 0, 41.25, 250 
+L 58.75, 250 
+A 0 0 0 0 0, 58.75, 250 
+L 58.75, 250 
+A 0 0 0 0 0, 58.75, 250 
+ z"
+            index="0"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 91.25, 250 
+A 0 0 0 0 0, 91.25, 250 
+L 91.25, 250 
+A 0 0 0 0 0, 91.25, 250 
+L 108.75, 250 
+A 0 0 0 0 0, 108.75, 250 
+L 108.75, 250 
+A 0 0 0 0 0, 108.75, 250 
+ z"
+            index="1"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 141.25, 250 
+A 0 0 0 0 0, 141.25, 250 
+L 141.25, 250 
+A 0 0 0 0 0, 141.25, 250 
+L 158.75, 250 
+A 0 0 0 0 0, 158.75, 250 
+L 158.75, 250 
+A 0 0 0 0 0, 158.75, 250 
+ z"
+            index="2"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 191.25, 250 
+A 0 0 0 0 0, 191.25, 250 
+L 191.25, 250 
+A 0 0 0 0 0, 191.25, 250 
+L 208.75, 250 
+A 0 0 0 0 0, 208.75, 250 
+L 208.75, 250 
+A 0 0 0 0 0, 208.75, 250 
+ z"
+            index="3"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 241.25, 250 
+A 0 0 0 0 0, 241.25, 250 
+L 241.25, 250 
+A 0 0 0 0 0, 241.25, 250 
+L 258.75, 250 
+A 0 0 0 0 0, 258.75, 250 
+L 258.75, 250 
+A 0 0 0 0 0, 258.75, 250 
+ z"
+            index="4"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 291.25, 250 
+A 0 0 0 0 0, 291.25, 250 
+L 291.25, 250 
+A 0 0 0 0 0, 291.25, 250 
+L 308.75, 250 
+A 0 0 0 0 0, 308.75, 250 
+L 308.75, 250 
+A 0 0 0 0 0, 308.75, 250 
+ z"
+            index="5"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 341.25, 250 
+A 0 0 0 0 0, 341.25, 250 
+L 341.25, 250 
+A 0 0 0 0 0, 341.25, 250 
+L 358.75, 250 
+A 0 0 0 0 0, 358.75, 250 
+L 358.75, 250 
+A 0 0 0 0 0, 358.75, 250 
+ z"
+            index="6"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+          <path
+            d="M 391.25, 250 
+A 0 0 0 0 0, 391.25, 250 
+L 391.25, 250 
+A 0 0 0 0 0, 391.25, 250 
+L 408.75, 250 
+A 0 0 0 0 0, 408.75, 250 
+L 408.75, 250 
+A 0 0 0 0 0, 408.75, 250 
+ z"
+            index="7"
+            role="presentation"
+            shape-rendering="auto"
+            style="fill: #252525; stroke: #252525; padding: 8px; stroke-width: 0;"
+          />
+        </g>
+        <g
+          role="presentation"
+        >
+          <line
+            role="presentation"
+            shape-rendering="auto"
+            style="stroke: #252525; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+            vector-effect="non-scaling-stroke"
+            x1="50"
+            x2="400"
+            y1="250"
+            y2="250"
+          />
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-0"
+              x="50"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="50"
+              >
+                0-15
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-1"
+              x="100"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="100"
+              >
+                16-30
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-2"
+              x="150"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="150"
+              >
+                31-45
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-3"
+              x="200"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="200"
+              >
+                46-60
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-4"
+              x="250"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="250"
+              >
+                61-75
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-5"
+              x="300"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="300"
+              >
+                76-90
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-6"
+              x="350"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="350"
+              >
+                91-105
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-1-tickLabels-7"
+              x="400"
+              y="272.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="400"
+              >
+                106-120
+              </tspan>
+            </text>
+          </g>
+        </g>
+        <g
+          role="presentation"
+        >
+          <line
+            role="presentation"
+            shape-rendering="auto"
+            style="stroke: #252525; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+            vector-effect="non-scaling-stroke"
+            x1="50"
+            x2="50"
+            y1="5"
+            y2="250"
+          />
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-2-tickLabels-0"
+              x="39"
+              y="193.72"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="end"
+                x="39"
+              >
+                2
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-2-tickLabels-1"
+              x="39"
+              y="132.47"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="end"
+                x="39"
+              >
+                4
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-2-tickLabels-2"
+              x="39"
+              y="71.22"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="end"
+                x="39"
+              >
+                6
+              </tspan>
+            </text>
+          </g>
+          <g
+            role="presentation"
+          >
+            <text
+              direction="inherit"
+              dx="0"
+              id="chart-axis-2-tickLabels-3"
+              x="39"
+              y="9.969999999999999"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; padding: 10px; fill: #252525; stroke: transparent;"
+                text-anchor="end"
+                x="39"
+              >
+                8
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+      <div
+        style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+      >
+        <svg
+          height="300"
+          style="overflow: visible; width: 100%; height: 100%;"
+          viewBox="0 0 450 300"
+          width="450"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;

@@ -5,7 +5,7 @@ export const Footer = styled.footer`
 ${({ theme }) => css`
   color:${theme.color.backgroundColor};
   font-weight: bold;
-  padding: 5px;
+  padding: ${theme.spacings.small};
   display: flex;
   justify-content: center;
   align-items: end;
@@ -16,7 +16,7 @@ ${({ theme }) => css`
   background-repeat: no-repeat;
   background-size: cover;
   width:100%;
-  height: 320px;
+  height: 20rem;
   z-index: -10000;
 `}
 `

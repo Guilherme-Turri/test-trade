@@ -27,10 +27,10 @@ describe('<Header />', () => {
         apiKey: "123456",
       }
     });
-
-    pageRender(<Header />)
+    const { container } = pageRender(<Header />)
     const name = screen.getByText('Olá, testUser.')
     expect(name).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   })
 
   it('should call logout actions', () => {
