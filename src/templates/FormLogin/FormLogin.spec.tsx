@@ -17,17 +17,16 @@ jest.mock('react-redux', () => ({
   ...jest.requireActual('react-redux'),
   useDispatch: () => mockedUseDispatch,
 }));
-
 jest.setTimeout(10000)
 
 describe('<FormLogin/>', () => {
-
   const authLoginSpy = jest.spyOn(authLoginTest, 'authUser')
-
   it('should render on screen properly', () => {
-    pageRender(<FormLogin />)
+    const { container } = pageRender(<FormLogin />)
     const enter = screen.getByText('Enter')
     expect(enter).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
+
   })
 
   it('should call submitFunction by enter key', () => {

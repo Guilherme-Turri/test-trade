@@ -1,28 +1,35 @@
 import styled, { css } from 'styled-components'
 import { Container as TC } from '../TextComponent/styles'
 
-export const Container = styled.div`
-${({ theme }) => css`
+interface availableProps {
+  available: boolean
+}
+
+export const Container = styled.div<availableProps>`
+${({ theme, available }) => css`
 background: white;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-height: 300px;
-width: 200px;
+height: 15.625rem;
+width: 15.625rem;
 border-radius: 5px;
-margin: 15px;
-box-shadow: 0 0 5px ${theme.color.secondaryColor};
+margin: ${theme.spacings.normal};
+box-shadow: ${available ? '0 0 5px ' + theme.color.secondaryColor : 'none'};
+cursor: ${available ? 'pointer' : ''};
+
 ${TC}{
+  color: ${available ? '' : 'grey'};
   font-family: ${theme.fonts.logoFont};
-  border-bottom: 1px solid ${theme.color.secondaryColor};
-  padding:5px;
+  border-bottom: ${available ? '1px solid ' + theme.color.secondaryColor : 'none'};
+  padding: ${theme.spacings.xsmall};;
 }
 `}
 `
 export const Img = styled.div`
 ${({ theme }) => css`
-height: 100px;
-width: 100px;
+height: 6.25rem;
+width: 6.25rem;
 `}
 `

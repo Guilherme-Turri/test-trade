@@ -9,7 +9,7 @@ import { ErrorMessage } from '../../components/ErrorMessage';
 import { Ball } from '../../UI/Ball';
 import { useDispatch } from 'react-redux';
 import { setUser } from "../../storage/user/user";
-import { setCountries } from "../../storage/countries/countries";
+import { setCountries } from "../../storage/parameters/parameters";
 import { useNavigate } from 'react-router-dom';
 
 export const FormLogin = () => {
@@ -27,6 +27,7 @@ export const FormLogin = () => {
       const result = await authUser(apiKey.value, request);
       if (result !== undefined) {
         const { response, json } = result;
+
         if (response.status === 200 && json?.errors?.token) {
           setMessage(json.errors.token)
         }

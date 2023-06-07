@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardHolder> hould render on screen cards with no context 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.938rem;
+}
+
+.c6 {
+  color: #2d5839;
+}
+
+.c1 {
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 15.625rem;
+  width: 15.625rem;
+  border-radius: 5px;
+  margin: 0.938rem;
+  box-shadow: 0 0 5px #00c555;
+  cursor: pointer;
+}
+
+.c1 .c5 {
+  font-family: 'Bruno Ace SC',cursive;
+  border-bottom: 1px solid #00c555;
+  padding: 0.313rem;
+}
+
+.c7 {
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 15.625rem;
+  width: 15.625rem;
+  border-radius: 5px;
+  margin: 0.938rem;
+  box-shadow: none;
+}
+
+.c7 .c5 {
+  color: grey;
+  font-family: 'Bruno Ace SC',cursive;
+  border-bottom: none;
+  padding: 0.313rem;
+}
+
+.c2 {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c3 {
+  color: #00c555;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 {
+  color: grey;
+  width: 100%;
+  height: 100%;
+}
+
+.c9 {
+  color: grey;
+  width: 100%;
+  height: 100%;
+}
+
+.c8 {
+  color: grey;
+  width: 100%;
+  height: 100%;
+}
+
+<div>
+  <section
+    class="c0"
+    data-testid="CardHolderContainer"
+  >
+    <div
+      class="c1"
+      data-testid="cardId"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          data-testid="Earth"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m57.7 193 9.4 16.4c8.3 14.5 21.9 25.2 38 29.8l57.9 16.5c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6 16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5 4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5.3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3-92.8 0-171.5 60.9-198.2 145zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <p
+        class="c5 c6"
+      >
+        Selecione o país
+      </p>
+    </div>
+    <div
+      class="c7"
+      data-testid="cardId"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c8"
+          data-testid="Calendar"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"
+            />
+            <path
+              d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"
+            />
+          </svg>
+        </div>
+      </div>
+      <p
+        class="c5 c6"
+      >
+        Selecione a temporada
+      </p>
+    </div>
+    <div
+      class="c7"
+      data-testid="cardId"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c9"
+          data-testid="League"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.23 6c-1.66 0-3.22.66-4.36 1.73C6.54 6.73 5.61 6 4.5 6a2.5 2.5 0 0 0 0 5c.21 0 .41-.03.61-.08-.05.25-.09.51-.1.78a6.006 6.006 0 0 0 6.68 6.27c2.55-.28 4.68-2.26 5.19-4.77.15-.71.15-1.4.06-2.06-.09-.6.38-1.13.99-1.13H22V6H11.23zM4.5 9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm6.5 6c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+            />
+            <circle
+              cx="11"
+              cy="12"
+              r="2"
+            />
+          </svg>
+        </div>
+      </div>
+      <p
+        class="c5 c6"
+      >
+        Selecione a liga
+      </p>
+    </div>
+    <div
+      class="c7"
+      data-testid="cardId"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c10"
+          data-testid="Club"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6 13.5 4 2.5 4-2.5V5H6v8.5zM4.5 10a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm13-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM4.485 6.199A6.71 6.71 0 0 1 10 3.3a6.715 6.715 0 0 1 5.456 2.823 1.4 1.4 0 0 0 2.281-1.624A9.518 9.518 0 0 0 10 .5a9.506 9.506 0 0 0-7.817 4.107 1.402 1.402 0 0 0 .355 1.948 1.401 1.401 0 0 0 1.947-.356zm10.971 7.678A6.713 6.713 0 0 1 10 16.7a6.71 6.71 0 0 1-5.515-2.899 1.4 1.4 0 0 0-2.302 1.592A9.506 9.506 0 0 0 10 19.5a9.518 9.518 0 0 0 7.737-3.999 1.401 1.401 0 0 0-2.281-1.624z"
+            />
+          </svg>
+        </div>
+      </div>
+      <p
+        class="c5 c6"
+      >
+        Selecione o clube
+      </p>
+    </div>
+  </section>
+</div>
+`;

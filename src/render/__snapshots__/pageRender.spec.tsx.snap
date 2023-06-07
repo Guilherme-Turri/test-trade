@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pageRender renders children componenet 1`] = `
+<div>
+  <p
+    data-testid="child"
+  >
+    Child
+  </p>
+</div>
+`;

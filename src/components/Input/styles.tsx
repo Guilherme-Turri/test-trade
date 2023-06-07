@@ -5,10 +5,10 @@ ${({ theme }) => css`
 outline: none;
 all: unset;
 border: 1px solid ${theme.color.secondaryColor};
-border-radius: 5px;
+border-radius: ${theme.radius.small};
 width: 100%;
-height: 25px;
-padding: 15px;
+height: 1.563rem;
+padding: ${theme.spacings.normal};
 box-sizing: border-box;
 color: ${theme.color.primaryColor};
 ::placeholder{

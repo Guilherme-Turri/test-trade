@@ -1,24 +1,29 @@
 import styled, { css } from 'styled-components'
+
 export const Container = styled.section`
 ${({ theme }) => css`
 display:flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-around;
-height: 100vh;
-width: 100%;
+
+height:100vh;
 a{
-  color:white;
+  margin-top: ${theme.spacings.normal};
   text-decoration: none;
+  color:${theme.color.error}
 }
 `}
 `
 export const Content = styled.div`
 display:flex;
-justify-content: space-evenly;
+flex-direction:column;
+flex-wrap: wrap;
 align-items: center;
-align-items: center;
-height: 350px;
-width: 350px;
+width: 100%;
+z-index:99999999;
 
+`
+export const Img = styled.div`
+height: 15rem;
+width: 15rem;
 `

@@ -5,7 +5,6 @@ import * as Styled from './styles'
 import { Logout } from '../../UI/Logout';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { unsetCountries } from '../../storage/countries/countries'
 import { unsetUser } from '../../storage/user/user'
 
 export const Header = () => {
@@ -16,11 +15,10 @@ export const Header = () => {
 
   const handleLogout = () => {
     dispatch(unsetUser())
-    dispatch(unsetCountries())
     navigate('/')
   }
   return (
-    <Styled.Container>
+    <Styled.Container data-testid="HeaderContainer">
       <TextComponent>Olá, {user?.name}.</TextComponent>
       <Styled.Img onClick={handleLogout}><Logout /></Styled.Img>
     </Styled.Container>

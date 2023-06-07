@@ -15,7 +15,9 @@ describe('<Input />', () => {
   it('should render on screen properly', () => {
     const { container } = componentRender(<Input {...mockValues} />)
     expect(container).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   })
+
   it('should render on screen whith error message', () => {
     mockValues.error = 'errorMsg'
     componentRender(<Input {...mockValues} />)
